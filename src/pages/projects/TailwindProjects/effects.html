@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tailwind CSS Project</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  </head>
+  <body class="text-white bg-slate-500">
+    <h1>This page demonstrates using effects with Tailwind CSS</h1>
+    <div class="h-screen p-4 Parent">
+      <h2 class="flex justify-center">Box Shadow</h2>
+      <div class="inline-block p-4 text-black bg-white border rounded-lg shadow-lg">
+        <h3 class="text-2xl">Card</h3>
+        <p class="mb-4">This card needed some contrast from the background because they are the same color</p>
+        <button class="px-3 py-2 rounded-lg cursor-pointer shadow-md shadow-slate-400/50">A shadow helps do that</button>
+        <button class="px-3 py-2 rounded-lg cursor-pointer bg-slate-200 shadow-md shadow-green-200">This button is active</button>
+        <button class="px-3 py-2 rounded-lg cursor-not-allowed bg-slate-200 opacity-50 shadow-md shadow-red-200">This button is disabled, opacity and cursor change</button>
+      </div>
+      <h2 class="flex justify-center">Blur Effect, color inversion, sepia</h2>
+      <div class="container grid grid-cols-3">
+        <div class="p-4 text-black bg-white border rounded-lg shadow-lg">
+          <h3 class="text-2xl">Card</h3>
+          <div class="flex flex-col">
+            <img class="h-64 w-64 hover:blur" src="https://images.pexels.com/photos/7792647/pexels-photo-7792647.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Public domain image by Ron Lach, courtesy of pexels.com">
+            <p>Hover to blur</p>
+          </div><br>
+        </div>
+        <div class="p-4 text-black bg-white border rounded-lg shadow-lg">
+          <h3 class="text-2xl">Card</h3>
+          <div class="flex flex-col">
+            <img class="h-64 w-64 hover:invert" src="https://images.pexels.com/photos/7792647/pexels-photo-7792647.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Public domain image by Ron Lach, courtesy of pexels.com">
+            <p>Hover to invert colors</p>
+          </div><br>
+        </div>
+        <div class="p-4 text-black bg-white border rounded-lg shadow-lg">
+          <h3 class="text-2xl">Card</h3>
+          <div class="flex flex-col">
+            <img class="h-64 w-64 hover:sepia" src="https://images.pexels.com/photos/7792647/pexels-photo-7792647.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Public domain image by Ron Lach, courtesy of pexels.com">
+            <p>Hover to change tone</p>
+          </div><br>
+        </div>
+      </div><br>
+      <h2 class="flex justify-center">Brightness, contrast and grayscale</h2><br>
+      <div class="container grid grid-cols-3">
+        <div class="p-4 text-black bg-white border rounded-lg shadow-lg">
+          <h3 class="text-2xl">Card</h3>
+          <img class="h-64 w-64 hover:brightness-50" src="https://images.pexels.com/photos/7792647/pexels-photo-7792647.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Public domain image by Ron Lach, courtesy of pexels.com">
+          <p>Hover to change brightness</p>
+        </div>
+        <div class="p-4 text-black bg-white border rounded-lg shadow-lg">
+          <h3 class="text-2xl">Card</h3>
+          <img class="h-64 w-64 hover:contrast-50" src="https://images.pexels.com/photos/7792647/pexels-photo-7792647.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Public domain image by Ron Lach, courtesy of pexels.com">
+          <p>Hover to change contrast</p>
+        </div>
+        <div class="p-4 text-black bg-white border rounded-lg shadow-lg">
+          <h3 class="text-2xl">Card</h3>
+          <img class="h-64 w-64 hover:grayscale" src="https://images.pexels.com/photos/7792647/pexels-photo-7792647.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Public domain image by Ron Lach, courtesy of pexels.com">
+          <p>Hover to change to grayscale</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

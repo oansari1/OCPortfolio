@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tailwind CSS Project</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  </head>
+  <body class="text-white bg-slate-500">
+    <h1 class="flex justify-center">This page demonstrates using grids with Tailwind CSS</h1>
+    <br>
+    <!--Strange behavior when going from md to sm, why is column2 getting bigger when stepping down?-->
+    <p>This section shows grid columns</p>
+    <br>
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
+      <div class="bg-sky-500 p-6 rounded-lg">Column1</div>
+      <div class="bg-sky-500 p-6 rounded-lg">column2</div>
+      <div class="bg-sky-500 p-6 rounded-lg">column3</div>
+      <div class="bg-sky-500 p-6 rounded-lg">column4</div>
+      <div class="bg-lime-500 p-6 rounded-lg">object1</div>
+      <div class="bg-lime-500 p-6 rounded-lg">object2</div>
+      <div class="bg-lime-500 p-6 rounded-lg">object3</div>
+      <div class="bg-lime-500 p-6 rounded-lg">object4</div>
+      <div class="bg-lime-500 p-6 rounded-lg">object5</div>
+      <div class="bg-red-500 p-6 rounded-lg col-span-2">object6 extends to 2 columns</div>
+      <div class="bg-pink-500 p-6 rounded-lg col-start-2">object7 starts at the second column</div>
+      <div class="bg-lime-500 p-6 rounded-lg col-start-2 col-end-4">object8 starts at column2 and stops at column4</div>
+    </div>
+    <br>
+    <p>This section shows grid rows</p>
+    <br>
+    <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-2 gap-4">
+      <div class="col-span-2 bg-sky-500 p-6 rounded-lg">object1</div>
+      <div class="col-span-2 bg-sky-500 p-6 rounded-lg">object2</div>
+      <div class="bg-sky-500 p-6 rounded-lg">object3</div>
+      <div class="bg-sky-500 p-6 rounded-lg">object4</div>
+      <div class="bg-sky-500 p-6 rounded-lg">object5</div>
+      <div class="col-span-2 bg-sky-500 p-6 rounded-lg">object6</div>
+      <div class="bg-sky-500 p-6 rounded-lg">object7</div>
+      <div class="bg-sky-500 p-6 rounded-lg">object8</div>
+      <div class="bg-sky-500 p-6 rounded-lg">object9</div>
+      <div class="col-span-2 bg-sky-500 p-6 rounded-lg">object10</div>
+      <div class="bg-sky-500 p-6 rounded-lg">objec11</div>
+      <div class="bg-sky-500 p-6 rounded-lg">object12</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tailwind CSS Project</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    </head>
+  <body class="text-white bg-slate-500">
+    <h1 class="flex justify-center">This page demonstrates using Borders with Tailwind CSS</h1>
+    <div class="h-screen pt-4">
+      <h1 class="flex justify-center border-t-2 border-b-4 border-l-6 border-r-8">Header, with different sizes on each border edge</h1><br>
+      <h1 class="flex justify-center">Dividers instead of borders, vertical</h1>
+      <div class="p-4 divide-y divide-red-500">
+        <div>Object 1</div>
+        <div>Object 2</div>
+        <div>Object 3</div>
+        <div>Object 4</div>
+        <div>Object 5</div>
+      </div>
+      <h1 class="flex justify-center">Dividers (in red) instead of borders, horizontal</h1>
+      <div class="flex border-y-2 border-blue-500 justify-evenly divide-x-4 divide-red-500">
+        <div class="px-8">Object 1</div>
+        <div class="px-8">Object 2</div>
+        <div class="px-8">Object 3</div>
+        <div class="px-8">Object 4</div>
+        <div class="px-8">Object 5</div>
+      </div><br><br>
+      <h1 class="flex justify-center">Border color and styles</h1><br>
+      <div class="container flex justify-evenly">
+        <input class="border-4 border-red-500" type="text">
+        <input class="border-4 border-dashed border-blue-500" type="text">
+        <input class="border-4 border-dotted border-green-500" type="text">
+      </div><br><br>
+      <h1 class="flex justify-center">Outline color and styles</h1><br>
+      <div class="container flex justify-evenly">
+        <button class="outline outline-1 outline-offset-2 outline-red-500 rounded-md">Button 1</button>
+        <button class="outline outline-2 outline-offset-3 outline-dotted outline-blue-500 rounded-md">Button 2</button>
+        <button class="outline outline-4 outline-offset-4 outline-double outline-green-500 rounded-md">Button 3</button>
+      </div><br><br>
+      <h1 class="flex justify-center">Ring color and styles</h1><br>
+      <div class="container flex justify-evenly">
+        <button class="ring ring-1 ring-offset-2 ring-offset-red-300 ring-red-500 rounded-md">Button 1</button>
+        <button class="ring ring-2 ring-offset-2 ring-dotted ring-offset-blue-300 ring-blue-500 rounded-md">Button 2</button>
+        <button class="ring ring-4 ring-offset-4 ring-double ring-offset-green-300 ring-green-500 rounded-md">Button 3</button>
+      </div>
+    </div>
+  </body>
+</html>

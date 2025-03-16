@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tailwind CSS Project</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  </head>
+  <body class="text-white bg-slate-500">
+    <h1>This page demonstrates using flex with Tailwind CSS</h1>
+    <br>
+    <br>
+    <h1>This is without flex</h1>
+    <div class="Parent border-green-600 border-4">
+      <div class="border-4 border-red-200" id="sidebarcontent">
+        <p>This is a sidebar</p>
+      </div>
+      <div class="border-4 border-red-600" id="maincontent">
+        <p>This is the main content Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur in consequuntur debitis. Quod mollitia id amet velit debitis ipsa recusandae itaque molestias! Tempora, nisi est ea culpa earum inventore? Voluptatibus?</p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1 class="flex justify-center">This is with flex. The header is justified to the center</h1>
+    <div class="Parent border-blue-600 border-4">
+
+      <div class="flex">
+        <div class="border-4 border-orange-200" id="sidebarcontentflex">
+          <p>This is a sidebar with flex</p>
+        </div>
+        <div class="border-4 border-red-200 flex-none" id="sidebarcontentflex">
+          <p>This is a sidebar with "flex-none"</p>
+        </div>
+        <div class="border-4 border-red-600" id="maincontentflex">
+          <p>This is the main content Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur inventore quasi labore repellendus corrupti tempore natus nemo perspiciatis quis ratione eius, impedit officiis sapiente animi, id, voluptatum repudiandae expedita quas?</p>
+        </div>
+      </div>
+      <p>This section is using flex basis</p>
+      <div class="flex">
+        <div class="basis-1/4 border-4 border-purple-200">
+          <p>Content with a dedicated scale (1/4 of view)</p>
+        </div>
+        <div class="basis-3/4 border-4 border-purple-600">
+          <p>Lots more content, with a larger dedicated scale (3/4 of view)</p>
+        </div>
+      </div>
+      <p class="flex justify-center">Justified between objects</p>
+      <br>
+      <div class="flex justify-between">
+        <p class="border-4 border-yellow-200">Object 1</p>
+        <p class="border-4 border-green-400">Object 2</p>
+        <p class="border-4 border-yellow-600">Object 3</p>
+      </div>
+      <br>
+      <p class="flex justify-center">Justified evenly around objects</p>
+      <br>
+      <div class="flex justify-evenly">
+        <p class="bg-yellow-200">Object 1</p>
+        <p class="bg-green-400">Object 2</p>
+        <p class="bg-yellow-600">Object 3</p>
+      </div>
+      <br>
+      <p class="flex justify-center">Justified evenly around objects, but with centered vertical alignment</p>
+      <br>
+      <div class="flex items-center justify-evenly">
+        <p class="p-3 border-4 border-yellow-200">sidebar1</p>
+        <p class="p-8 border-4 border-green-400">Main content Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reiciendis sint sequi, delectus exercitationem deserunt cum eaque eius porro, ullam odit? Inventore quam similique, molestias atque a quod exercitationem! Perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et recusandae a autem eligendi rerum magni sequi. Possimus earum vero ex necessitatibus, voluptate veniam architecto aliquam eligendi ab ipsa delectus! Ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nostrum ex iusto. Dolor, iure, distinctio cum in minima quam assumenda totam rem animi pariatur libero ex cumque ab obcaecati corporis.</p>
+        <p class="p-6 border-4 border-yellow-600">sidebar2</p>
+      </div>
+    </div>
+  </body>
+</html>
