@@ -38,13 +38,13 @@ export default function Projects() {
         <h3 className="text-2xl font-semibold my-8">This accordion is a work in progress</h3>
         <HorizontalAccordion
           sections={[
-            { title: 'C', links: [], logo: 'src/assets/c-plain.svg' },
-            { title: 'Tailwind CSS', links: tailwindLinks, logo: 'src/assets/tailwindcss-original.svg' },
-            { title: 'React', links: reactLinks, logo: 'src/assets/react-original.svg' },
-            { title: 'Java', links: [], logo: 'src/assets/java-plain.svg' },
-            { title: 'Web Basics', links: [], logo: 'src/assets/web-basics.svg' }, // HTML, CSS, JS combined
-            { title: 'WordPress', links: [], logo: 'src/assets/wordpress-plain-wordmark.svg' },
-            { title: 'Adobe XD', links: [], logo: 'src/assets/xd-plain.svg' },
+            { title: 'C', links: [], logo: '/assets/c-plain.svg' },
+            { title: 'Tailwind CSS', links: tailwindLinks, logo: '/assets/tailwindcss-original.svg' },
+            { title: 'React', links: reactLinks, logo: '/assets/react-original.svg' },
+            { title: 'Java', links: [], logo: '/assets/java-plain.svg' },
+            { title: 'Web Basics', links: [], logo: '/assets/web-basics.svg' }, // HTML, CSS, JS combined
+            { title: 'WordPress', links: [], logo: '/assets/wordpress-plain-wordmark.svg' },
+            { title: 'Adobe XD', links: [], logo: '/assets/xd-plain.svg' },
           ]}
         />
       </div>
