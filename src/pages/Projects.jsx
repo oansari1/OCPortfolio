@@ -2,15 +2,13 @@ import { Link } from "react-router-dom";
 import HorizontalAccordion from "../components/HorizontalAccordion";
 
 const tailwindLinks = [
-  { label: 'Typography', href: 'Tailwind/typography.html' },
-  { label: 'Layout', href: 'Tailwind/layouts.html' },
-  { label: 'Spacing', href: 'Tailwind/spacing.html' },
-  { label: 'Flex', href: 'Tailwind/flex.html' },
-  { label: 'Grid', href: 'Tailwind/grids.html' },
-  { label: 'Borders', href: 'Tailwind/borders.html' },
-  { label: 'Effects', href: 'Tailwind/effects.html' },
-  { label: 'Animations', href: 'Tailwind/animations.html' },
-  { label: 'Darkmode', href: 'Tailwind/darkmode.html' },
+  { label: 'Typography', href: 'TailwindProjects/typography.html' },
+  { label: 'Layout', href: 'TailwindProjects/layouts.html' },
+  { label: 'Spacing', href: 'TailwindProjects/spacing.html' },
+  { label: 'Flex', href: 'TailwindProjects/flex.html' },
+  { label: 'Grid', href: 'TailwindProjects/grids.html' },
+  { label: 'Borders', href: 'TailwindProjects/borders.html' },
+  { label: 'Effects', href: 'TailwindProjects/effects.html' },
 ];
 
 const reactLinks = [
