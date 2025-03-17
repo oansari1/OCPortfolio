@@ -10,6 +10,7 @@ export default function Navbar() {
             <Link to="/" className="transition-transform duration-300 transform hover:scale-115 hover:text-[#FA9600] hover:underline hover:shadow-lg">Home</Link>
             <Link to="/About" className="transition-transform duration-300 transform hover:scale-115 hover:text-[#FA9600] hover:underline hover:shadow-lg">About</Link>
             <Link to="/Projects" className="transition-transform duration-300 transform hover:scale-115 hover:text-[#FA9600] hover:underline hover:shadow-lg">Projects</Link>
+            <Link to="/Blog" className="transition-transform duration-300 transform hover:scale-115 hover:text-[#FA9600] hover:underline hover:shadow-lg">Blog</Link>
           </ul>
         </nav>
       </header>    )
