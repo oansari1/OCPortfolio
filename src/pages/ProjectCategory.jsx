@@ -2,13 +2,13 @@ import { useParams } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 const tailwindLinks = [
-  { label: 'Typography', href: '/public/TailwindProjects/typography.html' },
-  { label: 'Layout', href: '/public/TailwindProjects/layouts.html' },
-  { label: 'Spacing', href: '/public/TailwindProjects/spacing.html' },
-  { label: 'Flex', href: '/public/TailwindProjects/flex.html' },
-  { label: 'Grid', href: '/public/TailwindProjects/grids.html' },
-  { label: 'Borders', href: '/public/TailwindProjects/borders.html' },
-  { label: 'Effects', href: '/public/TailwindProjects/effects.html' },
+  { label: 'Typography', href: '../public/TailwindProjects/typography.html' },
+  { label: 'Layout', href: '../public/TailwindProjects/layouts.html' },
+  { label: 'Spacing', href: '../public/TailwindProjects/spacing.html' },
+  { label: 'Flex', href: '../public/TailwindProjects/flex.html' },
+  { label: 'Grid', href: '../public/TailwindProjects/grids.html' },
+  { label: 'Borders', href: '../public/TailwindProjects/borders.html' },
+  { label: 'Effects', href: '../public/TailwindProjects/effects.html' },
 ];
 
 const reactLinks = [
