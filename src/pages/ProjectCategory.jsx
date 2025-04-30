@@ -12,12 +12,12 @@ const tailwindLinks = [
 ];
 
 const reactLinks = [
-  { label: 'Static Pages', href: '/react/static_react/dist/index.html' },
-  { label: 'Data Driven', href: '/react/travel/dist/index.html' },
-  { label: 'React State', href: '/react/chef_claude/dist/index.html' },
-  { label: 'Side Effects', href: '/react/meme_generator/dist/index.html' },
-  { label: 'Tenzies', href: '/react/tenzies/dist/index.html' },
-  { label: 'Assembly Endgame', href: '/react/assembly_endgame/dist/index.html' },
+  { label: 'Static Pages', href: '/projects/static_react/' },
+  { label: 'Data Driven', href: '/projects/travel/' },
+  { label: 'React State', href: '/projects/chef_claude/' },
+  { label: 'Side Effects', href: '/projects/meme_generator/' },
+  { label: 'Tenzies', href: '/projects/tenzies/' },
+  { label: 'Assembly Endgame', href: '/projects/assembly_endgame/' },
 ];
 
 export default function ProjectCategory() {
