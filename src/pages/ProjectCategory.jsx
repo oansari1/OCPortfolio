@@ -2,22 +2,22 @@ import { useParams } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 const tailwindLinks = [
-  { label: 'Typography', href: '../public/TailwindProjects/typography.html' },
-  { label: 'Layout', href: '../public/TailwindProjects/layouts.html' },
-  { label: 'Spacing', href: '../public/TailwindProjects/spacing.html' },
-  { label: 'Flex', href: '../public/TailwindProjects/flex.html' },
-  { label: 'Grid', href: '../public/TailwindProjects/grids.html' },
-  { label: 'Borders', href: '../public/TailwindProjects/borders.html' },
-  { label: 'Effects', href: '../public/TailwindProjects/effects.html' },
+  { label: 'Typography', href: '/projects/tailwind/typography.html' },
+  { label: 'Layout', href: '/projects/tailwind/layouts.html' },
+  { label: 'Spacing', href: '/projects/tailwind/spacing.html' },
+  { label: 'Flex', href: '/projects/tailwind/flex.html' },
+  { label: 'Grid', href: '/projects/tailwind/grids.html' },
+  { label: 'Borders', href: '/projects/tailwind/borders.html' },
+  { label: 'Effects', href: '/projects/tailwind/effects.html' },
 ];
 
 const reactLinks = [
-  { label: 'Static Pages', href: '/src/pages/projects/ReactProjects/static_react/index.html' },
-  { label: 'Data Driven', href: '/src/pages/projects/ReactProjects/travel/index.html' },
-  { label: 'React State', href: '/src/pages/projects/ReactProjects/chef_claude/index.html' },
-  { label: 'Side Effects', href: '/src/pages/projects/ReactProjects/meme_generator/index.html' },
-  { label: 'Tenzies', href: '/src/pages/projects/ReactProjects/tenzies/index.html' },
-  { label: 'Assembly Endgame', href: '/src/pages/projects/ReactProjects/assembly_endgame/index.html' },
+  { label: 'Static Pages', href: '/react/static_react/dist/index.html' },
+  { label: 'Data Driven', href: '/react/travel/dist/index.html' },
+  { label: 'React State', href: '/react/chef_claude/dist/index.html' },
+  { label: 'Side Effects', href: '/react/meme_generator/dist/index.html' },
+  { label: 'Tenzies', href: '/react/tenzies/dist/index.html' },
+  { label: 'Assembly Endgame', href: '/react/assembly_endgame/dist/index.html' },
 ];
 
 export default function ProjectCategory() {
