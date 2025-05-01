@@ -26,10 +26,10 @@ export default function Projects() {
       <h1 className="text-4xl font-semibold mb-4">Projects</h1>
       <ul className="space-y-2 text-[#8C8C8C]">
         <li className="transition-transform duration-300 transform hover:scale-115 hover:text-[#FA9600] hover:underline">
-          <Link to="/project-category/react">React Projects</Link>
+          <Link to="/projects/react">React Projects</Link>
         </li>
         <li className="transition-transform duration-300 transform hover:scale-115 hover:text-[#FA9600] hover:underline">
-          <Link to="/project-category/tailwind">Tailwind Projects</Link>
+          <Link to="/projects/tailwind">Tailwind Projects</Link>
         </li>
       </ul>
       <div>
