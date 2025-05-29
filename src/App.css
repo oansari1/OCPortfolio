@@ -1,3 +1,11 @@
+/* Scrollbar width calculation */
+body {
+  max-width: calc(100vw - var(--scrollbar-width));
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+
 #root {
   margin: 0 auto;
   padding: 0;
@@ -17,12 +25,7 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+
 
 @keyframes logo-spin {
   from {
@@ -47,3 +50,6 @@
   color: #888;
 }
 
+body {
+  --scrollbar-width: calc(100vw - 100%);
+}

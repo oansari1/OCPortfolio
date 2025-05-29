@@ -1,7 +1,7 @@
 export default function About() {
     return (
     <div className="flex w-3/4 h-auto gap-4 items-center justify-center max-w-6xl mx-auto p-6">
-        <img src="/ProfilePic.jpg" alt="A Silly pic of Ozzie" className="w-1/3 max-w-xs mr-18 rounded-lg"/>
+        <img src="/assets/ProfilePic.jpg" alt="A Silly pic of Ozzie" className="w-1/3 max-w-xs mr-18 rounded-lg"/>
         <div className="w-2/3 h-128 ml-18 bg-[#3A3A3A] p-12 rounded-lg overflow-y-auto">
           <h1 className="text-4xl text-[#FA9600] font-semibold mb-4">About Me</h1>
           <p className="text-lg max-w-2xl mx-auto">

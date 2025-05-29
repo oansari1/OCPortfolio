@@ -1,0 +1,29 @@
+#suggested-recipe-container {
+    display: flex;
+    flex-direction: column;
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+
+}
+
+#suggested-recipe-container p {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+ol li p {
+    text-align: start;
+}
+
+ul > li {
+    list-style: disc;
+}
+#suggested-recipe-container ul li, #suggested-recipe-container ol li {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: flex-start;
+}
+

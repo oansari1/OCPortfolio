@@ -1,30 +1,12 @@
 import { useParams } from "react-router-dom";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { projectLinks } from "../data/projectLinks";
 
-const tailwindLinks = [
-  { label: 'Typography', href: '/projects/tailwind/typography.html' },
-  { label: 'Layout', href: '/projects/tailwind/layouts.html' },
-  { label: 'Spacing', href: '/projects/tailwind/spacing.html' },
-  { label: 'Flex', href: '/projects/tailwind/flex.html' },
-  { label: 'Grid', href: '/projects/tailwind/grids.html' },
-  { label: 'Borders', href: '/projects/tailwind/borders.html' },
-  { label: 'Effects', href: '/projects/tailwind/effects.html' },
-];
-
-const reactLinks = [
-  { label: 'Static Pages', href: '/projects/static_react/' },
-  { label: 'Data Driven', href: '/projects/travel/' },
-  { label: 'React State', href: '/projects/chef_claude/' },
-  { label: 'Side Effects', href: '/projects/meme_generator/' },
-  { label: 'Tenzies', href: '/projects/tenzies/' },
-  { label: 'Assembly Endgame', href: '/projects/assembly_endgame/' },
-];
 
 export default function ProjectCategory() {
   const { category } = useParams(); 
-
-  const links = category === 'tailwind' ? tailwindLinks : reactLinks;
-
+  const links = projectLinks[category] || ['PROBLEM']; // Fallback to an empty array if category is not found
+  
   return (
     <div className="text-[#FA9600] text-center p-8">
       <h1 className="text-4xl font-bold mb-4">Projects: {category}</h1>
@@ -32,7 +14,11 @@ export default function ProjectCategory() {
       <ul className="space-y-2 text-[#8C8C8C]">
         {links.map((link, index) => (
           <li key={index} className="transition-transform duration-300 transform hover:scale-115 hover:text-[#FA9600] hover:underline">
-            <a href={link.href} target="_blank" rel="noopener noreferrer">{link.label}</a>
+            {link.external ? (
+              <a href={link.href}>{link.label}</a>
+            ) : (
+              <Link to={link.href}>{link.label}</Link>
+            )}
           </li>
         ))}
       </ul>
