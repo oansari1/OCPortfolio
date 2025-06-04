@@ -14,16 +14,18 @@
     flex-direction: column;
     justify-content: flex-start;
 }
-ol li p {
+
+#claudeDiv ol {
+    list-style: decimal;
+    margin-left: 20px;
+    margin-bottom: 12px;
+    text-align: start;
+
+}
+
+#claudeDiv ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 12px;
     text-align: start;
 }
-
-ul > li {
-    list-style: disc;
-}
-#suggested-recipe-container ul li, #suggested-recipe-container ol li {
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: flex-start;
-}
-

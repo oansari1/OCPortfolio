@@ -6,6 +6,13 @@ import getRecipleFromMistral from "./ai"
 export default function Main() {
     const [ingredients, setIngredients] = React.useState([])
     const [recipe, setRecipe] = React.useState("")
+    const recipeSection = React.useRef(null)
+
+    React.useEffect(() => {
+        if (recipe !== "" && recipeSection.current !== null) {
+            recipeSection.current.scrollIntoView({behavior: "smooth"})
+        }
+    }, [recipe])
 
     async function getRecipe() {
         const recipe = await getRecipleFromMistral(ingredients)
@@ -18,7 +25,7 @@ export default function Main() {
     }
 
     return (
-        <div className="px-8 pt-8 pb-4" id="mainDiv">
+        <div className="px-8 pt-8 pb-4" id="claudeDiv">
             <form
                 action={addIngredient}
                 className="flex justify-center items-center gap-3 h-10"
@@ -36,6 +43,7 @@ export default function Main() {
             </form>
                 {ingredients.length > 0 &&
                     <IngredientsList
+                        ref={recipeSection}
                         ingredients={ingredients}
                         getRecipe={getRecipe}
                     />

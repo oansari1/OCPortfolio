@@ -11,11 +11,11 @@ export default function IngredientsList(props) {
                 </ul>
                 {props.ingredients.length > 3 &&
                 <div className="flex items-center justify-between w-full p-4 rounded-xl bg-[#F0EFEB]" id="get-recipe-container">
-                    <div className=" flex flex-col items-start">
+                    <div ref={props.ref} className=" flex flex-col items-start">
                         <h3 className="font-bold text-lg"> Ready for a recipe?</h3>
                         <p className="text-[#6B7280]">Generate a recipe from your list of ingredients</p>
                     </div>
-                    <button onClick={props.getRecipe} className="rounded-lg bg-[#D17557] text-[#FAFAF8] py-[9px] px-[17px] cursor-pointer text-sm font-medium">
+                    <button onClick={props.getRecipe} className="rounded-lg border-3 border-[#D17557] bg-[#D17557] text-[#FAFAF8] py-[9px] px-[17px] cursor-pointer text-sm font-medium hover:border-3 hover:bg-[#d1937e]  transition-colors duration-300" id="get-recipe-button">
                         Get a recipe
                     </button>
                 </div>}

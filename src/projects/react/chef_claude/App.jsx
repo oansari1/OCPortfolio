@@ -1,6 +1,6 @@
 import Header from "./Header"
 import Main from "./Main"
-import "./index.css"
+import "./style.css"
 export default function ChefClaudeApp() {
   return (
     <>
