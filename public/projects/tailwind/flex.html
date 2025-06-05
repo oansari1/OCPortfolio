@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Tailwind CSS Project</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link href="/src/styles.css" rel="stylesheet">
   </head>
   <body class="text-white bg-slate-500">
     <h1>This page demonstrates using flex with Tailwind CSS</h1>
@@ -11,7 +11,7 @@
     <br>
     <h1>This is without flex</h1>
     <div class="Parent border-green-600 border-4">
-      <div class="border-4 border-red-200" id="sidebarcontent">
+      <div class="border-4 border-yellow-400" id="sidebarcontent">
         <p>This is a sidebar</p>
       </div>
       <div class="border-4 border-red-600" id="maincontent">
@@ -25,7 +25,7 @@
     <div class="Parent border-blue-600 border-4">
 
       <div class="flex">
-        <div class="border-4 border-orange-200" id="sidebarcontentflex">
+        <div class="border-4 border-orange-400" id="sidebarcontentflex">
           <p>This is a sidebar with flex</p>
         </div>
         <div class="border-4 border-red-200 flex-none" id="sidebarcontentflex">
@@ -47,25 +47,25 @@
       <p class="flex justify-center">Justified between objects</p>
       <br>
       <div class="flex justify-between">
-        <p class="border-4 border-yellow-200">Object 1</p>
+        <p class="border-4 border-yellow-500">Object 1</p>
         <p class="border-4 border-green-400">Object 2</p>
-        <p class="border-4 border-yellow-600">Object 3</p>
+        <p class="border-4 border-yellow-800">Object 3</p>
       </div>
       <br>
       <p class="flex justify-center">Justified evenly around objects</p>
       <br>
       <div class="flex justify-evenly">
-        <p class="bg-yellow-200">Object 1</p>
+        <p class="bg-yellow-500">Object 1</p>
         <p class="bg-green-400">Object 2</p>
-        <p class="bg-yellow-600">Object 3</p>
+        <p class="bg-yellow-800">Object 3</p>
       </div>
       <br>
       <p class="flex justify-center">Justified evenly around objects, but with centered vertical alignment</p>
       <br>
       <div class="flex items-center justify-evenly">
-        <p class="p-3 border-4 border-yellow-200">sidebar1</p>
+        <p class="p-3 border-4 border-yellow-500">sidebar1</p>
         <p class="p-8 border-4 border-green-400">Main content Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reiciendis sint sequi, delectus exercitationem deserunt cum eaque eius porro, ullam odit? Inventore quam similique, molestias atque a quod exercitationem! Perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et recusandae a autem eligendi rerum magni sequi. Possimus earum vero ex necessitatibus, voluptate veniam architecto aliquam eligendi ab ipsa delectus! Ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nostrum ex iusto. Dolor, iure, distinctio cum in minima quam assumenda totam rem animi pariatur libero ex cumque ab obcaecati corporis.</p>
-        <p class="p-6 border-4 border-yellow-600">sidebar2</p>
+        <p class="p-6 border-4 border-yellow-800">sidebar2</p>
       </div>
     </div>
   </body>
