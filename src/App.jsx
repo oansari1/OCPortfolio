@@ -22,7 +22,7 @@ export default function App() {
     <div className="bg-[#252525] text-[#8C8C8C] font-sans min-h-screen flex flex-col">
       <Router>
         <Navbar />
-        <main id="mainContent" className="flex flex-grow items-center justify-center w-full mx-auto mt-2 p-4">
+        <main id="mainContent" className="flex flex-grow items-center justify-center w-full mx-auto mt-36 p-2 md:pt-0 md:mt-0">
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
