@@ -55,7 +55,8 @@ export default function AssemblyEndgameApp() {
             <span
                 key={index}
                 className={clsx(
-                    "flex items-center justify-center w-10 h-10 rounded-sm bg-gray-700 text-white text-lg border-b-2 border-gray-200",
+                    // Make tiles responsive and allow wrapping
+                    "flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-sm bg-gray-700 text-white text-base sm:text-lg border-b-2 border-gray-200 m-1",
                     isGameLost && !guessedLetters.includes(letter) ? "text-red-500" : ""
                 )}
             >
@@ -72,7 +73,7 @@ export default function AssemblyEndgameApp() {
             <button
                 key={letter}
                 className={clsx(
-                    "w-9 h-9 rounded-sm font-bold text-lg",
+                    "sm:w-9 sm:h-9 w-8 h-8 rounded-sm font-bold text-lg mx-1", // add mx-1 for more horizontal space
                     isCorrect ? "bg-green-600 text-white" :
                     isWrong ? "bg-red-600 text-white" :
                     "bg-yellow-500 text-gray-800 hover:bg-yellow-600"
@@ -95,15 +96,14 @@ export default function AssemblyEndgameApp() {
     );
 
     return (
-        <div className="flex flex-col items-center gap-4 p-6 pt-2 border-2 border-yellow-500 text-gray-100 min-h-[700px] rounded-xl">
+        <div className="flex flex-col items-center gap-4 p-2 sm:p-6 pt-2 text-gray-100 rounded-xl w-full mx-auto">
             {isGameWon && <Confetti recycle={false} numberOfPieces={1000} />}
             
-            <header className="text-center">
-                <h1 className="text-3xl font-bold text-yellow-500">Assembly: Endgame</h1>
-                <p className="text-sm text-gray-400 max-w-xs mx-auto">
+            <section className="text-center w-full">
+                <p className="text-xs sm:text-sm text-gray-400 max-w-xs mx-auto">
                     Guess the word within 8 attempts to keep the programming world safe from Assembly!
                 </p>
-            </header>
+            </section>
 
             <section className={gameStatusClasses} aria-live="polite">
                 {isGameOver ? (
@@ -123,23 +123,24 @@ export default function AssemblyEndgameApp() {
                 ) : null}
             </section>
 
-            <section className="flex flex-wrap gap-2 max-w-xs">
+            <section className="flex flex-wrap gap-2 max-w-full justify-center">
                 {languageElements}
             </section>
 
-            <section className="flex gap-2 mb-8">
+            {/* Responsive word tiles: wrap if needed */}
+            <section className="flex flex-wrap gap-1 sm:gap-2 mb-8 w-full justify-center max-w-2xl">
                 {letterElements}
             </section>
 
-            <section className="grid grid-cols-[repeat(auto-fit,_minmax(2.5vw,1fr))] gap-2 max-w-xs mb-8">
+            {/* Responsive keyboard: more columns, use available width */}
+            <section className="grid grid-cols-[repeat(auto-fit,_minmax(32px,1fr))] gap-1 sm:gap-2 w-full max-w-2xl mb-8">
                 {keyboardElements}
             </section>
-
 
             {isGameOver && (
                 <button
                     onClick={startNewGame}
-                    className="mt-4 bg-blue-600 hover:bg-blue-700 text-white text-lg py-2 px-6 rounded-md"
+                    className="mt-4 bg-blue-600 hover:bg-blue-700 text-white text-base sm:text-lg py-2 px-6 rounded-md"
                 >
                     New Game
                 </button>

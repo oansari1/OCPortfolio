@@ -8,13 +8,13 @@ import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Blog from './pages/Blog'
 import ProjectCategory from "./pages/ProjectCategory"
-import AssemblyEndgameApp from "./projects/react/assembly_endgame/App"
 import TenziesApp from './projects/react/tenzies/App';
 import MemeGeneratorWrapper from "./projects/react/meme_generator/MemeGeneratorWrapper"
 import ChefClaudeWrapper from "./projects/react/chef_claude/ChefClaudeWrapper"
 import TravelWrapper from "./projects/react/travel/TravelWrapper"
 import StaticReactWrapper from "./projects/react/static_react/StaticReactWrapper"
 import NotFound from "./pages/NotFound"
+import AssemblyEndgameWrapper from './projects/react/assembly_endgame/AssemblyEndgameWrapper'
 
 export default function App() {
   
@@ -22,14 +22,14 @@ export default function App() {
     <div className="bg-[#252525] text-[#8C8C8C] font-sans min-h-screen flex flex-col">
       <Router>
         <Navbar />
-        <main id="mainContent" className="flex flex-grow items-center justify-center w-full mx-auto mt-36 p-2 md:pt-0 md:mt-0">
+        <main id="mainContent" className="flex flex-grow items-center justify-center w-full mx-auto mt-32 p-2 md:pt-0 md:mt-0">
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/projects/:category" element={<ProjectCategory />} />
-            <Route path="/projects/react/assembly_endgame" element={<AssemblyEndgameApp />} />
+            <Route path="/projects/react/assembly_endgame" element={<AssemblyEndgameWrapper />} />
             <Route path="/projects/react/tenzies" element={<TenziesApp />} />
             <Route path="/projects/react/meme_generator" element={<MemeGeneratorWrapper />} />
             <Route path="/projects/react/chef_claude" element={<ChefClaudeWrapper />} />

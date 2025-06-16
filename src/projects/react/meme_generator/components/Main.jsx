@@ -33,7 +33,7 @@ export default function Main() {
 
     return (
         <div className="max-w-3xl mx-auto p-4 bg-gray-200 text-black rounded-lg shadow-md">
-            <div className="grid gap-4 mb-6 grid-cols-2">
+            <div className="grid gap-4 mb-6 grid-cols-1 sm:grid-cols-2">
                 <label className="col-span-1">
                     Top Text
                     <input
@@ -46,7 +46,7 @@ export default function Main() {
                     />
                 </label>
 
-                <label className="col-span-1">
+                <label className="col-span-1 mt-1 sm:mt-0">
                     Bottom Text
                     <input
                         type="text"
@@ -60,7 +60,7 @@ export default function Main() {
 
                 <button
                     onClick={getMemeImage}
-                    className="col-span-2 bg-purple-700 hover:bg-purple-800 text-white py-2 rounded-lg transition"
+                    className="col-span-1 sm:col-span-2 bg-purple-700 hover:bg-purple-800 text-white py-2 rounded-lg transition"
                 >
                     Get a new meme image 🖼
                 </button>
@@ -71,11 +71,24 @@ export default function Main() {
                     src={meme.imageUrl}
                     alt="Meme"
                     className="w-full rounded shadow-md"
+                    style={{ maxHeight: "400px", objectFit: "contain" }}
                 />
-                <span className="absolute top-2 text-white text-4xl font-bold tracking-wider uppercase text-center px-2" style={{ textShadow: '2px 2px 5px rgba(0,0,0,0.7)' }}>
+                <span
+                    className="absolute left-1/2 -translate-x-1/2 top-2 w-[95%] text-white text-lg sm:text-3xl font-bold tracking-wider uppercase text-center px-2 pointer-events-none"
+                    style={{
+                        textShadow: '2px 2px 5px rgba(0,0,0,0.7)',
+                        wordBreak: 'break-word'
+                    }}
+                >
                     {meme.topText}
                 </span>
-                <span className="absolute bottom-2 text-white text-4xl font-bold tracking-wider uppercase text-center px-2" style={{ textShadow: '2px 2px 5px rgba(0,0,0,0.7)' }}>
+                <span
+                    className="absolute left-1/2 -translate-x-1/2 bottom-2 w-[95%] text-white text-lg sm:text-3xl font-bold tracking-wider uppercase text-center px-2 pointer-events-none"
+                    style={{
+                        textShadow: '2px 2px 5px rgba(0,0,0,0.7)',
+                        wordBreak: 'break-word'
+                    }}
+                >
                     {meme.bottomText}
                 </span>
             </div>

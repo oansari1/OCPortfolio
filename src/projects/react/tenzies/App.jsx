@@ -56,12 +56,19 @@ export default function TenziesApp() {
     ))
 
     return (
+        <section className="w-full max-w-4xl p-4 rounded-lg overflow-hidden bg-[#3A3A3A] my-4 mx-auto pb-3">
+        <h2
+          className="font-semibold text-[#FA9600] mt-0 mb-2 sm:mb-4"
+          style={{
+            fontSize: "clamp(2rem, 4vw, 2.75rem)",
+          }}
+        >Tenzies</h2>
+        <p className="text-[#8C8C8C] my-4">A fun game using a randomizer and conditional rendering</p>
         <div className="bg-gray-100 p-8 rounded-lg shadow-md w-full max-w-md mx-auto flex flex-col items-center justify-center">
             {gameWon && <Confetti />}
             <div aria-live="polite" className="sr-only">
                 {gameWon && <p>Congratulations! You won! Press "New Game" to start again.</p>}
             </div>
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">Tenzies</h1>
             <p className="text-gray-600 mb-8 text-center">
                 Roll until all dice are the same. Click each die to freeze it at its current value between rolls.
             </p>
@@ -76,5 +83,6 @@ export default function TenziesApp() {
                 {gameWon ? "New Game" : "Roll"}
             </button>
         </div>
+        </section>
     )
 }

@@ -22,30 +22,39 @@ import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
-    <div className="text-[#FA9600] bg-[#3A3A3A] rounded-lg flex flex-col min-w-1/3 p-8">
-      <h1 className="text-4xl font-semibold mb-4">Projects</h1>
-      <ul className="space-y-2 text-[#8C8C8C]">
-        <li className="transition-transform duration-300 transform hover:scale-115 hover:text-[#FA9600] hover:underline">
-          <Link to="/projects/React">React Projects</Link>
-        </li>
-        <li className="transition-transform duration-300 transform hover:scale-115 hover:text-[#FA9600] hover:underline">
-          <Link to="/projects/Tailwind">Tailwind Projects</Link>
-        </li>
-      </ul>
-      {/* <div>
-        <h3 className="text-2xl font-semibold my-8">This accordion is a work in progress</h3>
-        <HorizontalAccordion
-          sections={[
-            { title: 'C', links: [], logo: '/assets/c-plain.svg' },
-            { title: 'Tailwind CSS', links: tailwindLinks, logo: '/assets/tailwindcss-original.svg' },
-            { title: 'React', links: reactLinks, logo: '/assets/react-original.svg' },
-            { title: 'Java', links: [], logo: '/assets/java-plain.svg' },
-            { title: 'Web Basics', links: [], logo: '/assets/web-basics.svg' }, // HTML, CSS, JS combined
-            { title: 'WordPress', links: [], logo: '/assets/wordpress-plain-wordmark.svg' },
-            { title: 'Adobe XD', links: [], logo: '/assets/xd-plain.svg' },
-          ]}
-        />
-      </div> */}
+    <div className="flex flex-col items-center justify-center w-full px-2 sm:px-0">
+      <div className="w-full max-w-2xl bg-[#3A3A3A] rounded-lg my-4 mx-auto pb-3">
+        <h1
+          className="font-semibold text-[#FA9600] mt-0 mb-2 sm:mb-4"
+          style={{
+            fontSize: "clamp(2rem, 4vw, 2.75rem)",
+          }}
+        >
+          Projects
+        </h1>
+        <ul className="space-y-2 text-[#8C8C8C]">
+          <li className="text-l sm:text-xl md:text-2xl transition-transform duration-300 transform hover:scale-115 hover:text-[#FA9600] hover:underline">
+            <Link to="/projects/React">React Projects</Link>
+          </li>
+          <li className="text-l sm:text-xl md:text-2xl transition-transform duration-300 transform hover:scale-115 hover:text-[#FA9600] hover:underline">
+            <Link to="/projects/Tailwind">Tailwind Projects</Link>
+          </li>
+        </ul>
+        {/* <div>
+          <h3 className="text-2xl font-semibold my-8">This accordion is a work in progress</h3>
+          <HorizontalAccordion
+            sections={[
+              { title: 'C', links: [], logo: '/assets/c-plain.svg' },
+              { title: 'Tailwind CSS', links: tailwindLinks, logo: '/assets/tailwindcss-original.svg' },
+              { title: 'React', links: reactLinks, logo: '/assets/react-original.svg' },
+              { title: 'Java', links: [], logo: '/assets/java-plain.svg' },
+              { title: 'Web Basics', links: [], logo: '/assets/web-basics.svg' }, // HTML, CSS, JS combined
+              { title: 'WordPress', links: [], logo: '/assets/wordpress-plain-wordmark.svg' },
+              { title: 'Adobe XD', links: [], logo: '/assets/xd-plain.svg' },
+            ]}
+          />
+        </div> */}
+      </div>
     </div>
   );
 }

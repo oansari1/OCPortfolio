@@ -13,7 +13,7 @@ export const projectLinks = {
       { label: 'Data Driven', href: '/projects/react/travel', external: false },
       { label: 'React State', href: '/projects/react/chef_claude', external: false },
       { label: 'Side Effects', href: '/projects/react/meme_generator', external: false },
-      { label: 'Tenzies', href: '/projects/react/tenzies', external: false },
+      { label: 'Conditional Rendering', href: '/projects/react/tenzies', external: false },
       { label: 'Assembly Endgame', href: '/projects/react/assembly_endgame', external: false },
     ],
   };
