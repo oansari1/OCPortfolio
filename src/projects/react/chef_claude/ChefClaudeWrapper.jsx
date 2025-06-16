@@ -1,4 +1,3 @@
-import React from 'react';
 import ChefClaudeApp from './App';
 
 export default function ChefClaudeWrapper() {
@@ -13,7 +12,8 @@ export default function ChefClaudeWrapper() {
           A virtual chef powered by Mistral (Claude was the original LLM I was using, hence the name).
         </p>
         <p className="text-base sm:text-lg mb-2">
-          Input at least 4 ingredients, then it will recommend a recipe based on those and other common ingredients.
+          Input at least 4 ingredients, then it will recommend a recipe based on those and other common ingredients. <br />
+          <span className="text-[#FA9600]">Note:</span> The Mistral API doesn't always respond as expected. If you encounter issues, please try again later.
         </p>
     <div className="w-full max-w-4xl mt-4 sm:mt-10 p-2 sm:p-4 bg-[#FAFAF8] text-black rounded-lg shadow-md">
       <ChefClaudeApp /></div>
