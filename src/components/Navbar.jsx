@@ -52,16 +52,32 @@ export default function Navbar() {
                         transitionDuration: "300ms",
                     }}
                 >
-                    <Link to="/" className="block md:inline transition-transform duration-300 transform md:hover:scale-115 md:hover:text-[#FA9600] md:hover:underline md:hover:shadow-lg px-2 py-1">
+                    <Link
+                        to="/"
+                        className="block md:inline transition-transform duration-300 transform md:hover:scale-115 md:hover:text-[#FA9600] md:hover:underline md:hover:shadow-lg px-2 py-1"
+                        onClick={() => { if (menuOpen) setMenuOpen(false); }}
+                    >
                         Home
                     </Link>
-                    <Link to="/About" className="block md:inline transition-transform duration-300 transform md:hover:scale-115 md:hover:text-[#FA9600] md:hover:underline md:hover:shadow-lg px-2 py-1">
+                    <Link
+                        to="/About"
+                        className="block md:inline transition-transform duration-300 transform md:hover:scale-115 md:hover:text-[#FA9600] md:hover:underline md:hover:shadow-lg px-2 py-1"
+                        onClick={() => { if (menuOpen) setMenuOpen(false); }}
+                    >
                         About
                     </Link>
-                    <Link to="/Projects" className="block md:inline transition-transform duration-300 transform md:hover:scale-115 md:hover:text-[#FA9600] md:hover:underline md:hover:shadow-lg px-2 py-1">
+                    <Link
+                        to="/Projects"
+                        className="block md:inline transition-transform duration-300 transform md:hover:scale-115 md:hover:text-[#FA9600] md:hover:underline md:hover:shadow-lg px-2 py-1"
+                        onClick={() => { if (menuOpen) setMenuOpen(false); }}
+                    >
                         Projects
                     </Link>
-                    <Link to="/Blog" className="block md:inline transition-transform duration-300 transform md:hover:scale-115 md:hover:text-[#FA9600] md:hover:underline md:hover:shadow-lg px-2 py-1">
+                    <Link
+                        to="/Blog"
+                        className="block md:inline transition-transform duration-300 transform md:hover:scale-115 md:hover:text-[#FA9600] md:hover:underline md:hover:shadow-lg px-2 py-1"
+                        onClick={() => { if (menuOpen) setMenuOpen(false); }}
+                    >
                         Blog
                     </Link>
                 </ul>
